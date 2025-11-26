@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-promo",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2025-11-26T10:09:30.000Z",
+  "sourceContext": {
+    "originUrl": "https://professional.sunstargum.com/en-en/news-events/plaque-removal-lets-talk-oral-health.html",
+    "originPage": "article page with promotional banner",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "teal",
+    "density": "spacious",
+    "purpose": "promotional-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + text + CTA button",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional banners with call-to-action",
+      "marketing content sections",
+      "featured content with images",
+      "two-column layouts with prominent imagery"
+    ],
+    "notSuitableFor": [
+      "simple text comparisons",
+      "multi-column layouts (3+)",
+      "image-only galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/en-en/news-events/plaque-removal-lets-talk-oral-health"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-26T10:09:30.000Z"
+  }
+}

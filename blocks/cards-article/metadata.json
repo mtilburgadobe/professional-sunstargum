@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-11-26T10:09:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://professional.sunstargum.com/en-en/news-events/systemic-health-lets-talk-oral-health.html",
+    "originPage": "article page with related articles section",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "teal",
+    "density": "spacious",
+    "purpose": "related-articles",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "3 items horizontal grid, each with image + title + description",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "related articles sections",
+      "blog post recommendations",
+      "article listings with thumbnails"
+    ],
+    "notSuitableFor": [
+      "product cards",
+      "team member cards",
+      "cards without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/content/en-en/news-events/systemic-health-lets-talk-oral-health"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-26T10:09:00.000Z"
+  }
+}
