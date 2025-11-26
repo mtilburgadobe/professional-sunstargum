@@ -140,9 +140,6 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
-
-  // Load filter functionality
-  import('./filter.js');
 }
 
 /**
