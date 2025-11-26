@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-article-related",
+  "baseBlock": "cards-article",
+  "version": "1.0.0",
+  "created": "2025-11-26T10:09:30.000Z",
+  "sourceContext": {
+    "originUrl": "https://professional.sunstargum.com/en-en/news-events/plaque-removal-lets-talk-oral-health.html",
+    "originPage": "article page with related content section",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "teal",
+    "density": "compact",
+    "purpose": "article-links",
+    "imagePattern": "thumbnail"
+  },
+  "contentPattern": {
+    "structure": "image + title + link",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "related articles sections",
+      "recommended content grids",
+      "article navigation",
+      "content discovery sections"
+    ],
+    "notSuitableFor": [
+      "detailed article listings with dates/authors",
+      "full blog archive pages",
+      "single-column article lists"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/en-en/news-events/plaque-removal-lets-talk-oral-health"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-26T10:09:30.000Z"
+  }
+}
