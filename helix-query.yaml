@@ -1,0 +1,43 @@
+version: 1
+
+indices:
+  news-events:
+    include:
+      - /content/en-en/news-events/**
+    exclude:
+      - '**/images/**'
+      - '**/*.json'
+    target: /content/en-en/news-events/query-index
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: |
+          attribute(el, 'content')
+      description:
+        select: head > meta[name="description"]
+        value: |
+          attribute(el, 'content')
+      image:
+        select: head > meta[property="og:image"]
+        value: |
+          match(attribute(el, 'content'), 'https:\/\/[^\/]+(\/.*)')
+      keywords:
+        select: head > meta[name="keywords"]
+        value: |
+          attribute(el, 'content')
+      publicationDate:
+        select: head > meta[name="publication-date"]
+        value: |
+          attribute(el, 'content')
+      readingTime:
+        select: head > meta[name="reading-time"]
+        value: |
+          attribute(el, 'content')
+      lastModified:
+        select: none
+        value: |
+          parseTimestamp(headers['last-modified'], 'ddd, DD MMM YYYY hh:mm:ss GMT')
+      tags:
+        select: head > meta[name="tags"]
+        value: |
+          attribute(el, 'content')
