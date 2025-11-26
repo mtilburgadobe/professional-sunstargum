@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--text-color);
   background: var(--background-alt);
   line-height: 1.6;
@@ -33,6 +33,7 @@ main > div {
 
 /* Typography */
 h1 {
+  font-family: roboto-condensed, sans-serif;
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
