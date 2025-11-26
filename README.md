@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--professional-sunstargum--mtilburgadobe.aem.page/
+- Live: https://main--professional-sunstargum--mtilburgadobe.aem.live/
 
 ## Documentation
 
