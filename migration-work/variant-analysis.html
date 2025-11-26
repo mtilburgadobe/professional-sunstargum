@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta
+  http-equiv="Content-Security-Policy"
+  content="script-src 'nonce-aem' 'strict-dynamic' 'unsafe-inline' http: https:; base-uri 'self'; object-src 'none';"
+  move-to-http-header="true"
+>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script nonce="aem" src="/scripts/aem.js" type="module"></script>
+<script nonce="aem" src="/scripts/scripts.js" type="module"></script>
+<link rel="stylesheet" href="/styles/styles.css"/>
+</head>
+<body>
+<header></header>
+<main>
+<div><h1 id="block-variant-analysis">Block Variant Analysis</h1>
+<h2 id="related-articles-section-analysis">Related Articles Section Analysis</h2>
+<h3 id="original-html-structure">Original HTML Structure</h3>
+<p>Each article card contains:</p>
+<ol>
+<li><strong>Image</strong> - Large photo with alt text</li>
+<li><strong>Title</strong> - Clickable linked title</li>
+<li><strong>Description</strong> - Short summary text</li>
+</ol>
+<p>Example structure:</p>
+<pre><code class="language-html">&#x3C;article>
+  &#x3C;a href="/url">
+    &#x3C;img src="image.jpg" alt="Title">
+  &#x3C;/a>
+  &#x3C;a href="/url">
+    &#x3C;span class="title">Article Title&#x3C;/span>
+  &#x3C;/a>
+  &#x3C;span class="description">Article description text...&#x3C;/span>
+&#x3C;/article>
+</code></pre>
+<h3 id="existing-cards-article-block-structure">Existing cards-article Block Structure</h3>
+<p><strong>Expected markdown authoring format</strong>:</p>
+<pre><code class="language-markdown">| Cards Article |
+|---|
+| ![Alt text](image.jpg) |
+| *Tag* |
+| Date |
+| **[Title](url)** |
+</code></pre>
+<p><strong>JavaScript behavior</strong> (cards-article.js):</p>
+<ul>
+<li>Converts rows to <code>&#x3C;li></code> items in a <code>&#x3C;ul></code></li>
+<li>Classifies divs as <code>.cards-article-card-image</code> (if contains picture) or <code>.cards-article-card-body</code></li>
+<li>Optimizes images to 750px width</li>
+<li>Creates responsive grid layout</li>
+</ul>
+<p><strong>CSS styling</strong> (cards-article.css):</p>
+<ul>
+<li>Responsive grid: <code>minmax(280px, 1fr)</code></li>
+<li>Card styling: border, border-radius, hover effects</li>
+<li>Image aspect ratio: 16:9</li>
+<li>Tag styling (optional, in first <code>&#x3C;em></code>)</li>
+<li>Date styling (optional, in second <code>&#x3C;p></code>)</li>
+<li>Title styling (in last <code>&#x3C;p> strong a</code>)</li>
+</ul>
+<h3 id="comparison-related-articles-vs-cards-article">Comparison: Related Articles vs. cards-article</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="feature"><div><div>Layout</div><div>Carousel/grid of 4 cards</div><div>Responsive grid</div><div>✅ Yes</div></div><div><div>Card structure</div><div>Image + Title + Description</div><div>Image + body content</div><div>✅ Yes</div></div><div><div>Image</div><div>Full-width, 16:9 aspect</div><div>aspect-ratio: 16/9</div><div>✅ Yes</div></div><div><div>Title</div><div>Clickable link</div><div>Strong link in body</div><div>✅ Yes</div></div><div><div>Description</div><div>Plain text</div><div>Paragraph in body</div><div>✅ Yes</div></div><div><div>Tag/Category</div><div>No tag</div><div>Optional tag support</div><div>⚠️ Not needed</div></div><div><div>Date</div><div>No date</div><div>Optional date support</div><div>⚠️ Not needed</div></div><div><div>Hover effects</div><div>Image zoom + card lift</div><div>Image scale + shadow</div><div>✅ Yes</div></div><div><div>Responsive</div><div>Carousel navigation</div><div>Grid with breakpoints</div><div>✅ Similar</div></div></div>
+<h3 id="similarity-score-85">Similarity Score: ~85%</h3>
+<p><strong>Matches</strong>:</p>
+<ul>
+<li>Grid layout ✅</li>
+<li>Card-based design ✅</li>
+<li>Image + text structure ✅</li>
+<li>Hover animations ✅</li>
+<li>Responsive behavior ✅</li>
+</ul>
+<p><strong>Differences</strong>:</p>
+<ul>
+<li>Original has carousel functionality (prev/next buttons, dots)</li>
+<li>cards-article expects tags and dates (not needed here)</li>
+<li>Slight content structure difference (but adaptable)</li>
+</ul>
+<h3 id="decision-reuse-existing-block">Decision: REUSE EXISTING BLOCK</h3>
+<p><strong>Verdict</strong>: The existing <strong>cards-article</strong> block can be reused WITHOUT a new variant.</p>
+<p><strong>Rationale</strong>:</p>
+<ol>
+<li>Core structure is identical (image + title + description)</li>
+<li>Visual design is very similar (grid, cards, hover effects)</li>
+<li>The tag and date fields are OPTIONAL - we can simply omit them</li>
+<li>Carousel functionality can be added later via CSS/JS if needed, but not critical for MVP</li>
+<li>Meets the 70% similarity threshold for reuse (actually ~85%)</li>
+</ol>
+<h3 id="authoring-approach-for-related-articles">Authoring Approach for Related Articles</h3>
+<p><strong>Markdown structure</strong>:</p>
+<pre><code class="language-markdown">## Related Articles
+
+| Cards Article |
+|---|
+| ![Educate Patients on Proper Gum Care for Diabetes Control](./images/770f36083c4ad89b2d93eb0e621ca5d3.png) |
+| **[Educate Patients on Proper Gum Care for Diabetes Control](/en-en/news-events/advising-patients-on-links-between-diabetes-and-periodontitis.html)** |
+| The benefits of oral hygiene go beyond tooth and gum health. Patients need to understand how gum disease can affect conditions like diabetes and vice versa. |
+| ![Chlorhexidine, the Gold Standard in Dentistry](./images/9f38a43197a0a6b959bbf40c3bac8441.png) |
+| **[Chlorhexidine, the Gold Standard in Dentistry, Mode of Action](/en-en/news-events/chlorhexidine-the-gold-standard-in-dentistry.html)** |
+| Chlorhexidine is one of the main antibacterial ingredients in oral care products as GUM® PAROEX®, its antibacterial activity can last for more than twelve hours. |
+| ![Chlorhexidine: Side Effects, Therapy Benefits and Interactions](./images/f4b6161f1729f1feecdd20ba9579fd94.png) |
+| **[Chlorhexidine: Side Effects, Therapy Benefits and Interactions](/en-en/news-events/chlorhexidine-therapy-side-effects-and-interactions.html)** |
+| Chlorhexidine not only inhibits the multiplication of plaque bacteria, but also kills them. Find out more about the therapy, side effects and interactions. |
+| ![Interdental Cleaning Compliance](./images/e266b2c4e1ef0d180a8ca736383af645.png) |
+| **[Interdental Cleaning Compliance: Leverage the Evidence on Ease of Use](/en-en/news-events/compliance-in-interdental-cleaning.html)** |
+| A daily oral hygiene routine is one of the greatest issues in dental care. Discover how to drive interdental cleaning compliance by leveraging 'ease of use'. |
+</code></pre>
+<p><strong>Block structure</strong>: Each row contains 3 cells:</p>
+<ol>
+<li>Image with alt text</li>
+<li>Title as bold link</li>
+<li>Description as plain text</li>
+</ol>
+<p>This will render with the existing cards-article block without any modifications needed.</p>
+<h2 id="variant-management-summary">Variant Management Summary</h2>
+<h3 id="blocks-needed-for-this-page">Blocks Needed for This Page</h3>
+<ol>
+<li><strong>header</strong> - Use existing fragment</li>
+<li><strong>footer</strong> - Use existing fragment</li>
+<li><strong>cards-article</strong> - Use existing block (NO new variant needed)</li>
+</ol>
+<h3 id="no-new-variants-required">No New Variants Required</h3>
+<p>The existing blocks can handle all requirements for this article page migration.</p></div>
+</main>
+<footer></footer>
+</body>
+</html>
