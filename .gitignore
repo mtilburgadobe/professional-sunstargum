@@ -8,11 +8,7 @@ helix-importer-ui
 *.bak
 .idea
 
-# Migration work - images should only be in content directory
-migration-work/images/
-migration-work/**/*.png
-migration-work/**/*.jpg
-migration-work/**/*.jpeg
-migration-work/**/*.gif
-migration-work/**/*.svg
-migration-work/**/*.webp
+# ignore anything in content and migration-work
+content/*
+migration-work/*
+
