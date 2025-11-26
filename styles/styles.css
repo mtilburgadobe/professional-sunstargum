@@ -32,19 +32,61 @@ main > div {
 }
 
 /* Typography */
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: roboto-condensed, sans-serif;
-  font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
   margin: 32px 0 16px;
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
 p {
+  font-family: roboto, sans-serif;
   margin: 16px 0;
   font-size: 16px;
   line-height: 1.6;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-underline-offset: 4px;
+  text-wrap: pretty;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Page description */
