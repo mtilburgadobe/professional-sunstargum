@@ -11,7 +11,7 @@ Reading Time: 7
 
 **Dentin Hypersensitivity** has been defined as "pain derived from exposed dentin in response to chemical, thermal, tactile or osmotic stimuli which cannot be explained as arising from any other dental defect or disease" [[1]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927677/).
 
-![Dentist with patient](./tooth-sensitivity-facts-and-research-for-professionals/images/43fdb31df95c906d63720d15a871db3c.png)
+![Dentist with patient](tooth-sensitivity-facts-and-research-for-professionals/images/43fdb31df95c906d63720d15a871db3c.png)
 
 ---
 
@@ -32,7 +32,7 @@ Getting to the root of tooth sensitivity issues can be a challenge for dental pr
 
 ---
 
-![Single tooth illustration](./tooth-sensitivity-facts-and-research-for-professionals/images/783f288509177fd76f160a289e48254f.png)
+![Single tooth illustration](tooth-sensitivity-facts-and-research-for-professionals/images/783f288509177fd76f160a289e48254f.png)
 
 ---
 
@@ -64,7 +64,7 @@ Symptoms typically emerge as a result of the wear or loss of the enamel exposing
 
 ---
 
-![Inflamed gums illustration](./tooth-sensitivity-facts-and-research-for-professionals/images/d8a04995c3be6a4406e16029314318ad.png)
+![Inflamed gums illustration](tooth-sensitivity-facts-and-research-for-professionals/images/d8a04995c3be6a4406e16029314318ad.png)
 
 ---
 
@@ -93,7 +93,7 @@ Today, we know more than ever about why tooth sensitivity occurs, what effects i
 
 ---
 
-![3-step oral care routine illustration](./tooth-sensitivity-facts-and-research-for-professionals/images/6c9ad38a911c8a0344199f190012e27f.png)
+![3-step oral care routine illustration](tooth-sensitivity-facts-and-research-for-professionals/images/6c9ad38a911c8a0344199f190012e27f.png)
 
 ---
 
@@ -120,5 +120,5 @@ As tooth sensitivity continues to be a top concern among patients and their dent
 
 | Cards Article |  |  |
 |---|---|---|
-| ![Effective Strategies for Plaque Removal](./images/2b714686a97f66136f58d0cc5afc118a.png) | **[Effective Strategies for Plaque Removal: Insights from Professor Filippo Graziani](/en-en/news-events/plaque-removal-lets-talk-oral-health.html)** | Professor Filippo Graziani shares insights into effective strategies for plaque removal and its role in preventing periodontal and peri-implant diseases. |
-| ![Oral Health and Overall Health](./images/b339ab6966fb27adcfa642b2ac60288b.png) | **[Oral Health and Overall Health: Their Impact on Each Other](/en-en/news-events/systemic-health-lets-talk-oral-health.html)** | Professor Maria Clotilde Carra dives into the oral-systemic link as a key pillar for preventing periodontal and peri-implant diseases. |
+| ![Effective Strategies for Plaque Removal](tooth-sensitivity-facts-and-research-for-professionals/images/2b714686a97f66136f58d0cc5afc118a.png) | **[Effective Strategies for Plaque Removal: Insights from Professor Filippo Graziani](/en-en/news-events/plaque-removal-lets-talk-oral-health.html)** | Professor Filippo Graziani shares insights into effective strategies for plaque removal and its role in preventing periodontal and peri-implant diseases. |
+| ![Oral Health and Overall Health](tooth-sensitivity-facts-and-research-for-professionals/images/b339ab6966fb27adcfa642b2ac60288b.png) | **[Oral Health and Overall Health: Their Impact on Each Other](/en-en/news-events/systemic-health-lets-talk-oral-health.html)** | Professor Maria Clotilde Carra dives into the oral-systemic link as a key pillar for preventing periodontal and peri-implant diseases. |

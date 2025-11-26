@@ -21,10 +21,14 @@ body {
 }
 
 main {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 40px 24px;
+  max-width: 1380px;
+  margin: 24px 10px 0;
+  padding: 0;
   background: var(--background);
+}
+
+main > div {
+  padding: 40px 24px;
 }
 
 /* Typography */
