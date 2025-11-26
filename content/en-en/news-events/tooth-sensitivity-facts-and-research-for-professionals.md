@@ -118,17 +118,9 @@ As tooth sensitivity continues to be a top concern among patients and their dent
 
 ## Related Articles
 
-| Cards Article |
-|---|
-| ![Educate Patients on Proper Gum Care for Diabetes Control](./tooth-sensitivity-facts-and-research-for-professionals/images/770f36083c4ad89b2d93eb0e621ca5d3.png) |
-| **[Educate Patients on Proper Gum Care for Diabetes Control](/en-en/news-events/advising-patients-on-links-between-diabetes-and-periodontitis.html)** |
-| The benefits of oral hygiene go beyond tooth and gum health. Patients need to understand how gum disease can affect conditions like diabetes and vice versa. |
-| ![Chlorhexidine, the Gold Standard in Dentistry, Mode of Action](./tooth-sensitivity-facts-and-research-for-professionals/images/9f38a43197a0a6b959bbf40c3bac8441.png) |
-| **[Chlorhexidine, the Gold Standard in Dentistry, Mode of Action](/en-en/news-events/chlorhexidine-the-gold-standard-in-dentistry.html)** |
-| Chlorhexidine is one of the main antibacterial ingredients in oral care products as GUM® PAROEX®, its antibacterial activity can last for more than twelve hours. |
-| ![Chlorhexidine: Side Effects, Therapy Benefits and Interactions](./tooth-sensitivity-facts-and-research-for-professionals/images/f4b6161f1729f1feecdd20ba9579fd94.png) |
-| **[Chlorhexidine: Side Effects, Therapy Benefits and Interactions](/en-en/news-events/chlorhexidine-therapy-side-effects-and-interactions.html)** |
-| Chlorhexidine not only inhibits the multiplication of plaque bacteria, but also kills them. Find out more about the therapy, side effects and interactions. |
-| ![Interdental Cleaning Compliance: Leverage the Evidence on Ease of Use](./tooth-sensitivity-facts-and-research-for-professionals/images/e266b2c4e1ef0d180a8ca736383af645.png) |
-| **[Interdental Cleaning Compliance: Leverage the Evidence on Ease of Use](/en-en/news-events/compliance-in-interdental-cleaning.html)** |
-| A daily oral hygiene routine is one of the greatest issues in dental care. Discover how to drive interdental cleaning compliance by leveraging 'ease of use'. |
+| Cards Article |  |  |
+|---|---|---|
+| ![Educate Patients on Proper Gum Care for Diabetes Control](./tooth-sensitivity-facts-and-research-for-professionals/images/770f36083c4ad89b2d93eb0e621ca5d3.png) | **[Educate Patients on Proper Gum Care for Diabetes Control](/en-en/news-events/advising-patients-on-links-between-diabetes-and-periodontitis.html)** | The benefits of oral hygiene go beyond tooth and gum health. Patients need to understand how gum disease can affect conditions like diabetes and vice versa. |
+| ![Chlorhexidine, the Gold Standard in Dentistry, Mode of Action](./tooth-sensitivity-facts-and-research-for-professionals/images/9f38a43197a0a6b959bbf40c3bac8441.png) | **[Chlorhexidine, the Gold Standard in Dentistry, Mode of Action](/en-en/news-events/chlorhexidine-the-gold-standard-in-dentistry.html)** | Chlorhexidine is one of the main antibacterial ingredients in oral care products as GUM® PAROEX®, its antibacterial activity can last for more than twelve hours. |
+| ![Chlorhexidine: Side Effects, Therapy Benefits and Interactions](./tooth-sensitivity-facts-and-research-for-professionals/images/f4b6161f1729f1feecdd20ba9579fd94.png) | **[Chlorhexidine: Side Effects, Therapy Benefits and Interactions](/en-en/news-events/chlorhexidine-therapy-side-effects-and-interactions.html)** | Chlorhexidine not only inhibits the multiplication of plaque bacteria, but also kills them. Find out more about the therapy, side effects and interactions. |
+| ![Interdental Cleaning Compliance: Leverage the Evidence on Ease of Use](./tooth-sensitivity-facts-and-research-for-professionals/images/e266b2c4e1ef0d180a8ca736383af645.png) | **[Interdental Cleaning Compliance: Leverage the Evidence on Ease of Use](/en-en/news-events/compliance-in-interdental-cleaning.html)** | A daily oral hygiene routine is one of the greatest issues in dental care. Discover how to drive interdental cleaning compliance by leveraging 'ease of use'. |
