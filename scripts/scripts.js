@@ -14,6 +14,20 @@ import {
 } from './aem.js';
 
 /**
+ * Moves instrumentation attributes from one element to another.
+ * @param {Element} from The source element
+ * @param {Element} to The target element
+ */
+export function moveInstrumentation(from, to) {
+  ['data-block-name', 'data-block-status'].forEach((attr) => {
+    if (from.hasAttribute(attr)) {
+      to.setAttribute(attr, from.getAttribute(attr));
+      from.removeAttribute(attr);
+    }
+  });
+}
+
+/**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
  */
@@ -126,6 +140,9 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
+
+  // Load filter functionality
+  import('./filter.js');
 }
 
 /**
