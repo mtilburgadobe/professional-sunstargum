@@ -14,6 +14,13 @@
   width: 173px;
   float: left;
   margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Make following sections wrap around the floated navigation */
+.anchor-navigation + .section,
+.anchor-navigation + div {
+  overflow: visible;
 }
 
 .cmp-anchor-navigation__content {
