@@ -19,7 +19,7 @@
 .form-label {
   font-weight: 600;
   font-size: 0.95rem;
-  color: #333;
+  color: var(--gum-dark-text, #333);
 }
 
 .form-input {
@@ -32,13 +32,13 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #0066cc;
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+  border-color: var(--gum-teal, #00a996);
+  box-shadow: 0 0 0 3px rgba(0, 169, 150, 0.1);
 }
 
 .form-submit {
   padding: 1rem 2rem;
-  background-color: #0066cc;
+  background-color: var(--gum-teal, #00a996);
   color: white;
   border: none;
   border-radius: 4px;
@@ -50,11 +50,11 @@
 }
 
 .form-submit:hover {
-  background-color: #0052a3;
+  background-color: #008d7e;
 }
 
 .form-submit:active {
-  background-color: #003d7a;
+  background-color: #007066;
 }
 
 .form-success {

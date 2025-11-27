@@ -1,11 +1,19 @@
 :root {
+  /* Sunstar GUM Brand Colors */
+  --gum-teal: #00a996;
+  --gum-blue: #005dab;
+  --gum-magenta: #eb008c;
+  --gum-dark-text: #272b29;
+  --gum-body-text: #464c4e;
+  --gum-light-bg: #f6f7f7;
+
   /* Colors */
-  --primary-color: #0066cc;
-  --text-color: #1a1a1a;
-  --text-secondary: #666;
+  --primary-color: var(--gum-teal);
+  --text-color: var(--gum-dark-text);
+  --text-secondary: var(--gum-body-text);
   --border-color: #e5e5e5;
   --background: #fff;
-  --background-alt: #f8f9fa;
+  --background-alt: var(--gum-light-bg);
 }
 
 * {
