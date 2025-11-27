@@ -1,5 +1,23 @@
 export default function decorate(block) {
-  // The sidebar content is already in the block
-  // Just add a wrapper class for styling
-  block.classList.add('product-sidebar-navigation');
+  // Get the parent section
+  const section = block.closest('.section');
+  if (!section) return;
+
+  // Add class to section for grid layout
+  section.classList.add('products-with-nav');
+
+  // Create wrapper for all content except the sidebar
+  const contentWrapper = document.createElement('div');
+  contentWrapper.className = 'product-content-wrapper';
+
+  // Move all siblings after the sidebar into the content wrapper
+  let sibling = block.nextElementSibling;
+  while (sibling) {
+    const next = sibling.nextElementSibling;
+    contentWrapper.appendChild(sibling);
+    sibling = next;
+  }
+
+  // Add the content wrapper after the sidebar
+  block.parentElement.appendChild(contentWrapper);
 }
