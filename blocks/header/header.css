@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: #fff;
+  background-color: #00a651;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -52,7 +52,7 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: #231f20;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -70,8 +70,8 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: inherit;
+  background-color: transparent;
+  color: #fff;
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
@@ -243,8 +243,12 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     top: 150%;
     padding: 16px;
-    background-color: var(--light-color);
+    background-color: #fff;
     white-space: initial;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul a {
+    color: #231f20;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
@@ -256,7 +260,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+    border-bottom: 8px solid #fff;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
@@ -271,10 +275,10 @@ header nav .nav-tools {
 
 header nav .nav-tools .button {
   background-color: transparent;
-  border: 1px solid #231f20;
+  border: 2px solid #fff;
   border-radius: 4px;
   padding: 8px 16px;
-  color: #231f20;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
@@ -282,7 +286,7 @@ header nav .nav-tools .button {
 }
 
 header nav .nav-tools .button:hover {
-  background-color: #00a651;
-  border-color: #00a651;
-  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  color: #00a651;
 }
