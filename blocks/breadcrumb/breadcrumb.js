@@ -26,7 +26,7 @@ export default function decorate(block) {
       const a = document.createElement('a');
       a.href = link.href;
       a.className = 'breadcrumb-link';
-      a.textContent = text;
+      a.textContent = link.textContent || text;
       li.append(a);
     } else {
       // Just add text for active item
