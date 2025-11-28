@@ -33,14 +33,22 @@ header .nav-sections .nav-search img {
 }
 
 header .nav-top-bar a {
-  color: #00a651;
+  background-color: #00a651;
+  border: 2px solid #00a651;
+  border-radius: 24px;
+  padding: 10px 24px;
+  color: #fff;
   font-size: 14px;
   font-weight: 500;
-  text-decoration: underline;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: inline-block;
 }
 
 header .nav-top-bar a:hover {
-  text-decoration: none;
+  background-color: #008a42;
+  border-color: #008a42;
 }
 
 @media (width >= 900px) {
