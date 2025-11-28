@@ -3,6 +3,33 @@ header {
   background-color: transparent;
 }
 
+header .nav-top-bar {
+  background-color: #fff;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
+header .nav-top-bar a {
+  color: #00a651;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+header .nav-top-bar a:hover {
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  header .nav-top-bar {
+    padding: 8px 32px;
+  }
+}
+
 header .nav-wrapper {
   background-color: #fff;
   width: 100%;
@@ -275,6 +302,8 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  display: none;
+  visibility: hidden;
 }
 
 header nav .nav-tools .button {

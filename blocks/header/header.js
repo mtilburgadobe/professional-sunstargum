@@ -159,8 +159,25 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
+  // Create top bar for consumer button if nav has a tools section with a link
+  const navTools = nav.querySelector('.nav-tools');
+  let topBar = null;
+  if (navTools) {
+    const consumerLink = navTools.querySelector('a');
+    if (consumerLink) {
+      topBar = document.createElement('div');
+      topBar.className = 'nav-top-bar';
+      const consumerButton = consumerLink.cloneNode(true);
+      topBar.append(consumerButton);
+    }
+  }
+
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
+
+  if (topBar) {
+    block.append(topBar);
+  }
   block.append(navWrapper);
 }
