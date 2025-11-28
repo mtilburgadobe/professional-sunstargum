@@ -35,9 +35,10 @@
   },
   "usage": {
     "pagesUsing": [
-      "/content/en-en/products"
+      "/content/en-en/products",
+      "content/en-en/products/toothbrushes/gum-sonic-ortho-battery-powered-electric-toothbrush"
     ],
-    "reuseCount": 1,
-    "lastUsed": "2025-11-27T12:55:34.321Z"
+    "reuseCount": 2,
+    "lastUsed": "2025-11-28T11:25:15.438Z"
   }
 }
