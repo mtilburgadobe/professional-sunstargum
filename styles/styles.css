@@ -36,7 +36,7 @@ main {
 }
 
 main > div {
-  padding: 40px 24px;
+  padding: 60px 80px;
 }
 
 /* Typography */
@@ -49,7 +49,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  line-height: 37px;
+  margin: 0;
 }
 
 h2 {
@@ -98,11 +102,15 @@ a:hover {
 }
 
 /* Page description */
+main > div > div > h1 + p,
 main > div > h1 + p {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: 26px;
   color: var(--text-secondary);
   max-width: 800px;
-  margin-bottom: 48px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 /* Result count styling */
@@ -119,7 +127,8 @@ main > div > h1 + p {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   main > div > h1 + p {
@@ -129,7 +138,8 @@ main > div > h1 + p {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   main > div > ul:first-of-type {
