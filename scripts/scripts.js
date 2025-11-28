@@ -59,6 +59,11 @@ async function loadFonts() {
  * @param {Element} main The container element
  */
 function buildBreadcrumbBlock(main) {
+  // Only add breadcrumb to the document's main element, not fragments
+  if (main !== document.querySelector('main')) {
+    return;
+  }
+
   // Generate breadcrumb based on URL path
   const { pathname } = window.location;
   const pathSegments = pathname.split('/').filter((seg) => seg && seg !== 'content');
