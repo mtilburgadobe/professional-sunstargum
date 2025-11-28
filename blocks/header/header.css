@@ -76,7 +76,7 @@ header nav {
   margin: auto;
   max-width: 1380px;
   height: 82px;
-  padding: 0 24px;
+  padding: 0 24px 0 0;
   font-family: roboto-condensed, sans-serif;
   background-color: #fff;
   border-radius: 100px;
@@ -100,7 +100,7 @@ header nav[aria-expanded='true'] {
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1380px;
-    padding: 0 32px;
+    padding: 0 32px 0 0;
   }
 
   header nav[aria-expanded='true'] {
