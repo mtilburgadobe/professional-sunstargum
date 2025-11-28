@@ -10,7 +10,7 @@ header .nav-top-bar {
   justify-content: flex-end;
   align-items: center;
   gap: 16px;
-  max-width: 1264px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1264px;
+  max-width: 1380px;
   height: 82px;
   padding: 0 24px;
   font-family: roboto-condensed, sans-serif;
@@ -85,7 +85,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: 1380px;
     padding: 0 32px;
   }
 
