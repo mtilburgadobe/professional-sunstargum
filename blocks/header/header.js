@@ -119,7 +119,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['brand', 'sections', 'tools', 'consumer'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -159,16 +159,32 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
-  // Create top bar for consumer button if nav has a tools section with a link
+  // Create top bar for consumer button and search icon
+  const navConsumer = nav.querySelector('.nav-consumer');
   const navTools = nav.querySelector('.nav-tools');
   let topBar = null;
-  if (navTools) {
-    const consumerLink = navTools.querySelector('a');
-    if (consumerLink) {
-      topBar = document.createElement('div');
-      topBar.className = 'nav-top-bar';
-      const consumerButton = consumerLink.cloneNode(true);
-      topBar.append(consumerButton);
+
+  if (navConsumer || navTools) {
+    topBar = document.createElement('div');
+    topBar.className = 'nav-top-bar';
+
+    // Add search icon from tools section
+    if (navTools) {
+      const searchIcon = navTools.querySelector('.icon');
+      if (searchIcon) {
+        const searchButton = searchIcon.cloneNode(true);
+        searchButton.classList.add('nav-search');
+        topBar.append(searchButton);
+      }
+    }
+
+    // Add consumer link
+    if (navConsumer) {
+      const consumerLink = navConsumer.querySelector('a');
+      if (consumerLink) {
+        const consumerButton = consumerLink.cloneNode(true);
+        topBar.append(consumerButton);
+      }
     }
   }
 
