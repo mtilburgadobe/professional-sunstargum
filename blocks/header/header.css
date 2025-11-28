@@ -1,4 +1,8 @@
 /* header and nav layout */
+header {
+  background-color: transparent;
+}
+
 header .nav-wrapper {
   background-color: #fff;
   width: 100%;
