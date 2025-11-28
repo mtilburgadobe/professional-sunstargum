@@ -30,7 +30,7 @@ body {
 
 main {
   max-width: 1380px;
-  margin: 16px 16px 0;
+  margin: 16px auto 0;
   padding: 0;
   background: var(--background);
 }
