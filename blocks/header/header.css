@@ -221,7 +221,14 @@ header nav .nav-sections ul {
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 700;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header nav .nav-sections ul > li a {
+  font-family: inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 header nav .nav-sections ul > li > ul {
