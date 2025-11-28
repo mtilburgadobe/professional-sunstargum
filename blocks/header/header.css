@@ -14,15 +14,22 @@ header .nav-top-bar {
   margin: 0 auto;
 }
 
-header .nav-top-bar .nav-search {
-  display: flex;
+header .nav-sections .nav-search {
+  display: none;
   align-items: center;
   cursor: pointer;
+  margin-left: auto;
 }
 
-header .nav-top-bar .nav-search img {
+header .nav-sections .nav-search img {
   width: 20px;
   height: 20px;
+}
+
+@media (width >= 900px) {
+  header .nav-sections .nav-search {
+    display: flex;
+  }
 }
 
 header .nav-top-bar a {
@@ -227,12 +234,21 @@ header nav .nav-sections ul > li > ul > li {
 
 @media (width >= 900px) {
   header nav .nav-sections {
-    display: block;
+    display: flex;
     visibility: visible;
     white-space: nowrap;
+    align-items: center;
+    flex: 1;
+  }
+
+  header nav .nav-sections .default-content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
+    display: flex;
     align-self: unset;
   }
 

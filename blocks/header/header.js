@@ -159,32 +159,29 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
-  // Create top bar for consumer button and search icon
-  const navConsumer = nav.querySelector('.nav-consumer');
+  // Add search icon to nav-sections
   const navTools = nav.querySelector('.nav-tools');
+  if (navTools && navSections) {
+    const searchIcon = navTools.querySelector('.icon');
+    if (searchIcon) {
+      const searchButton = searchIcon.cloneNode(true);
+      searchButton.classList.add('nav-search');
+      navSections.append(searchButton);
+    }
+  }
+
+  // Create top bar for consumer button only
+  const navConsumer = nav.querySelector('.nav-consumer');
   let topBar = null;
 
-  if (navConsumer || navTools) {
+  if (navConsumer) {
     topBar = document.createElement('div');
     topBar.className = 'nav-top-bar';
 
-    // Add search icon from tools section
-    if (navTools) {
-      const searchIcon = navTools.querySelector('.icon');
-      if (searchIcon) {
-        const searchButton = searchIcon.cloneNode(true);
-        searchButton.classList.add('nav-search');
-        topBar.append(searchButton);
-      }
-    }
-
-    // Add consumer link
-    if (navConsumer) {
-      const consumerLink = navConsumer.querySelector('a');
-      if (consumerLink) {
-        const consumerButton = consumerLink.cloneNode(true);
-        topBar.append(consumerButton);
-      }
+    const consumerLink = navConsumer.querySelector('a');
+    if (consumerLink) {
+      const consumerButton = consumerLink.cloneNode(true);
+      topBar.append(consumerButton);
     }
   }
 
