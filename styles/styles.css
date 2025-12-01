@@ -49,10 +49,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 500;
   font-family: Inter, sans-serif;
-  line-height: 37px;
+  line-height: 48px;
   margin: 0;
 }
 
@@ -90,7 +90,7 @@ p {
 }
 
 .breadcrumb-container + .section {
-  padding-top: 0;
+  padding-top: 60px;
 }
 
 .breadcrumb-container + .section > div > p:first-child {
