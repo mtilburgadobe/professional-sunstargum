@@ -1,4 +1,12 @@
 export default function decorate(block) {
+  // Check if we're on a news-events article page
+  const path = window.location.pathname;
+  const isNewsEventsArticle = path.includes('/news-events/') && !path.endsWith('/news-events.html');
+
+  // Store original rows before manipulating
+  const rows = [...block.children];
+
+  // Create breadcrumb navigation
   const nav = document.createElement('nav');
   nav.setAttribute('aria-label', 'Breadcrumb');
 
@@ -6,7 +14,7 @@ export default function decorate(block) {
   ol.className = 'breadcrumb-list';
 
   // Process each row in the block
-  [...block.children].forEach((row, index) => {
+  rows.forEach((row, index) => {
     const link = row.querySelector('a');
     const text = row.textContent.trim();
 
@@ -16,7 +24,7 @@ export default function decorate(block) {
     li.className = 'breadcrumb-item';
 
     // Last item is active (current page)
-    const isLast = index === block.children.length - 1;
+    const isLast = index === rows.length - 1;
     if (isLast) {
       li.classList.add('breadcrumb-item--active');
     }
@@ -39,5 +47,22 @@ export default function decorate(block) {
   });
 
   nav.append(ol);
-  block.replaceChildren(nav);
+
+  // Clear block and add navigation first
+  block.textContent = '';
+  block.append(nav);
+
+  // Add "View more" back link for news-events articles (after breadcrumb)
+  if (isNewsEventsArticle) {
+    const backLink = document.createElement('div');
+    backLink.className = 'breadcrumb-back-link';
+
+    const link = document.createElement('a');
+    link.href = '/en-en/news-events.html';
+    link.className = 'breadcrumb-back-link-anchor';
+    link.innerHTML = '&lt; View more';
+
+    backLink.append(link);
+    block.append(backLink);
+  }
 }

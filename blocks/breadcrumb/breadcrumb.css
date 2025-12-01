@@ -9,7 +9,26 @@
 }
 
 .breadcrumb nav {
-  padding: 24px 0 0;
+  padding: 24px 0;
+}
+
+.breadcrumb-back-link {
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+.breadcrumb-back-link-anchor {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #231f20;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 24px;
+}
+
+.breadcrumb-back-link-anchor:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb-list {
