@@ -11,4 +11,5 @@ helix-importer-ui
 # ignore anything in content and migration-work
 content/*
 migration-work/*
+import-work/*
 
