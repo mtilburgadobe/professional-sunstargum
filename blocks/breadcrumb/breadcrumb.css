@@ -5,7 +5,7 @@
 .breadcrumb {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0;
 }
 
 .breadcrumb nav {
@@ -72,8 +72,3 @@
   font-weight: 400;
 }
 
-@media (width >= 900px) {
-  .breadcrumb {
-    padding: 0 32px;
-  }
-}
