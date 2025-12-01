@@ -58,7 +58,7 @@ export default function decorate(block) {
     backLink.className = 'breadcrumb-back-link';
 
     const link = document.createElement('a');
-    link.href = '/en-en/news-events.html';
+    link.href = '/en-en/news-events';
     link.className = 'breadcrumb-back-link-anchor';
     link.innerHTML = '&lt; View more';
 
