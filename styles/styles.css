@@ -84,6 +84,19 @@ p {
   color: var(--text-color);
 }
 
+/* Remove spacing between breadcrumb and content */
+.breadcrumb-container {
+  padding-bottom: 0;
+}
+
+.breadcrumb-container + .section {
+  padding-top: 0;
+}
+
+.breadcrumb-container + .section > div > p:first-child {
+  margin-top: 0;
+}
+
 a {
   color: var(--text-color);
   cursor: pointer;

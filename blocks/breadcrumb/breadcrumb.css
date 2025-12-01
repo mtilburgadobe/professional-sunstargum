@@ -1,3 +1,7 @@
+.breadcrumb-container {
+  background: var(--gum-light-bg);
+}
+
 .breadcrumb {
   max-width: var(--content-width);
   margin: 0 auto;
@@ -5,7 +9,7 @@
 }
 
 .breadcrumb nav {
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 
 .breadcrumb-list {
