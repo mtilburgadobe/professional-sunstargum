@@ -119,7 +119,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['brand', 'sections', 'tools', 'consumer'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -159,8 +159,38 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
+  // Add search icon to nav-sections
+  const navTools = nav.querySelector('.nav-tools');
+  if (navTools && navSections) {
+    const searchIcon = navTools.querySelector('.icon');
+    if (searchIcon) {
+      const searchButton = searchIcon.cloneNode(true);
+      searchButton.classList.add('nav-search');
+      navSections.append(searchButton);
+    }
+  }
+
+  // Create top bar for consumer button only
+  const navConsumer = nav.querySelector('.nav-consumer');
+  let topBar = null;
+
+  if (navConsumer) {
+    topBar = document.createElement('div');
+    topBar.className = 'nav-top-bar';
+
+    const consumerLink = navConsumer.querySelector('a');
+    if (consumerLink) {
+      const consumerButton = consumerLink.cloneNode(true);
+      topBar.append(consumerButton);
+    }
+  }
+
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
+
+  if (topBar) {
+    block.append(topBar);
+  }
   block.append(navWrapper);
 }

@@ -55,6 +55,49 @@ async function loadFonts() {
 }
 
 /**
+ * Builds breadcrumb block and prepends to main in a new section.
+ * @param {Element} main The container element
+ */
+function buildBreadcrumbBlock(main) {
+  // Only add breadcrumb to the document's main element, not fragments
+  if (main !== document.querySelector('main')) {
+    return;
+  }
+
+  // Generate breadcrumb based on URL path
+  const { pathname } = window.location;
+  const pathSegments = pathname.split('/').filter((seg) => seg && seg !== 'content');
+
+  // Only add breadcrumb if we're not on the home page
+  if (pathSegments.length > 1) {
+    const breadcrumbItems = [];
+
+    // Add home page link
+    const homeLink = document.createElement('a');
+    homeLink.href = '/en-en/';
+    homeLink.textContent = 'Home page';
+    breadcrumbItems.push([homeLink]);
+
+    // Add parent section (e.g., "Articles" for news-events pages)
+    if (pathSegments.includes('news-events')) {
+      breadcrumbItems.push(['Articles']);
+    } else if (pathSegments.includes('products')) {
+      breadcrumbItems.push(['Products']);
+    } else if (pathSegments.includes('learning')) {
+      breadcrumbItems.push(['Learning']);
+    } else if (pathSegments.includes('resources')) {
+      breadcrumbItems.push(['Resources']);
+    }
+
+    if (breadcrumbItems.length > 1) {
+      const section = document.createElement('div');
+      section.append(buildBlock('breadcrumb', breadcrumbItems));
+      main.prepend(section);
+    }
+  }
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
@@ -78,6 +121,7 @@ function buildAutoBlocks(main) {
       });
     }
 
+    buildBreadcrumbBlock(main);
     buildHeroBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console

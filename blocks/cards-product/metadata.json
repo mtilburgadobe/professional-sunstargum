@@ -1,0 +1,43 @@
+{
+  "variantName": "cards-product",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-11-27T12:47:16.818Z",
+  "sourceContext": {
+    "originUrl": "https://professional.sunstargum.com/en-en/campaigns/gum-interdental-size-indicator-campaign.html",
+    "originPage": "product campaign page with features section",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-features",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "6 items alternating layout, each with large image + heading + description + optional CTA button",
+    "buttonCount": 2,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product feature showcases",
+      "campaign landing pages",
+      "product detail pages with alternating content",
+      "feature explanation sections with large imagery"
+    ],
+    "notSuitableFor": [
+      "article listings",
+      "blog post recommendations",
+      "team member cards",
+      "compact content grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/content/en-en/campaigns/gum-interdental-size-indicator-campaign"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-27T12:47:16.818Z"
+  }
+}

@@ -1,1 +1,29 @@
 /* add global styles that can be loaded post LCP here */
+
+/* Section Styles */
+main > div.background-teal {
+  background-color: var(--gum-teal);
+  color: #fff;
+}
+
+main > div.background-teal h1,
+main > div.background-teal h2,
+main > div.background-teal h3,
+main > div.background-teal h4,
+main > div.background-teal h5,
+main > div.background-teal h6 {
+  color: #fff;
+}
+
+main > div.background-teal p {
+  color: #fff;
+}
+
+main > div.background-teal a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+main > div.background-teal a:hover {
+  opacity: 0.9;
+}

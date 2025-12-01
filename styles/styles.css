@@ -1,11 +1,19 @@
 :root {
+  /* Sunstar GUM Brand Colors */
+  --gum-teal: #00a996;
+  --gum-blue: #005dab;
+  --gum-magenta: #eb008c;
+  --gum-dark-text: #272b29;
+  --gum-body-text: #464c4e;
+  --gum-light-bg: #f6f7f7;
+
   /* Colors */
-  --primary-color: #0066cc;
-  --text-color: #1a1a1a;
-  --text-secondary: #666;
+  --primary-color: var(--gum-teal);
+  --text-color: var(--gum-dark-text);
+  --text-secondary: var(--gum-body-text);
   --border-color: #e5e5e5;
   --background: #fff;
-  --background-alt: #f8f9fa;
+  --background-alt: var(--gum-light-bg);
 }
 
 * {
@@ -14,40 +22,110 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--text-color);
   background: var(--background-alt);
   line-height: 1.6;
 }
 
 main {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 40px 24px;
+  max-width: 1380px;
+  margin: 16px auto 0;
+  padding: 0;
   background: var(--background);
 }
 
+main > div {
+  padding: 60px 80px;
+}
+
 /* Typography */
-h1 {
-  font-size: 42px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: roboto-condensed, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 32px 0 16px;
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
+  line-height: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
 p {
+  font-family: roboto, sans-serif;
   margin: 16px 0;
   font-size: 16px;
   line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Remove spacing between breadcrumb and content */
+.breadcrumb-container {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.breadcrumb-container + .section {
+  padding-top: 60px;
+}
+
+.breadcrumb-container + .section > div > p:first-child {
+  margin-top: 0;
+}
+
+a {
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-underline-offset: 4px;
+  text-wrap: pretty;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Page description */
+main > div > div > h1 + p,
 main > div > h1 + p {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: 26px;
   color: var(--text-secondary);
   max-width: 800px;
-  margin-bottom: 48px;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 /* Result count styling */
@@ -64,7 +142,8 @@ main > div > h1 + p {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   main > div > h1 + p {
@@ -74,7 +153,8 @@ main > div > h1 + p {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   main > div > ul:first-of-type {
@@ -84,5 +164,52 @@ main > div > h1 + p {
   main > div > ul:first-of-type li {
     padding: 6px 12px;
     font-size: 13px;
+  }
+}
+
+/* Section with sidebar navigation layout */
+main > div.products-with-nav {
+  display: flex;
+  gap: 40px;
+  padding: 40px 24px;
+}
+
+main > div.products-with-nav .product-sidebar {
+  flex: 0 0 280px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+main > div.products-with-nav .product-sidebar > div > div {
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  main > div.products-with-nav .product-sidebar {
+    flex: 0 0 240px;
+  }
+
+  main > div.products-with-nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  main > div.products-with-nav {
+    flex-direction: column;
+    gap: 0;
+    padding: 24px;
+  }
+
+  main > div.products-with-nav .product-sidebar {
+    position: static;
+    max-height: none;
+    flex: 1 1 auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 }

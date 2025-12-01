@@ -1,0 +1,77 @@
+.anchor-navigation {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.anchor-navigation.separator {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cmp-anchor-navigation {
+  width: 173px;
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Make following sections wrap around the floated navigation */
+.anchor-navigation + .section,
+.anchor-navigation + div {
+  overflow: visible;
+}
+
+.cmp-anchor-navigation__content {
+  /* No background or border - plain text only */
+}
+
+.cmp-anchor-navigation__catalog__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #231f20;
+}
+
+.cmp-anchor-navigation__catalog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cmp-anchor-navigation__catalog__list__item {
+  display: block;
+}
+
+.cmp-anchor-navigation__catalog__list__item a {
+  color: #64656a;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.cmp-anchor-navigation__catalog__list__item a:hover {
+  color: #231f20;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .cmp-anchor-navigation {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .cmp-anchor-navigation__catalog__title {
+    font-size: 14px;
+  }
+
+  .cmp-anchor-navigation__catalog__list__item a {
+    font-size: 13px;
+  }
+}

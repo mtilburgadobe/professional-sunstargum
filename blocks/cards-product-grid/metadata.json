@@ -1,0 +1,44 @@
+{
+  "variantName": "cards-product-grid",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-11-27T12:55:34.321Z",
+  "sourceContext": {
+    "originUrl": "https://professional.sunstargum.com/en-en/products.html",
+    "originPage": "product catalog listing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-catalog",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "6 items in standard 3-column grid, each with product image + title + description + price",
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product catalog pages",
+      "product listing grids",
+      "e-commerce product displays",
+      "standard product showcases with pricing"
+    ],
+    "notSuitableFor": [
+      "article listings",
+      "feature showcases with alternating layouts",
+      "campaign landing pages with asymmetric layouts",
+      "cards without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/content/en-en/products",
+      "content/en-en/products/toothbrushes/gum-sonic-ortho-battery-powered-electric-toothbrush"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2025-11-28T11:25:15.438Z"
+  }
+}
