@@ -1,35 +1,34 @@
 {
-  "variantName": "cards-article-related",
-  "baseBlock": "cards-article",
+  "variantName": "anchor-navigation",
+  "baseBlock": "navigation",
   "version": "1.0.0",
-  "created": "2025-11-26T10:09:30.000Z",
+  "created": "2025-11-26T14:42:00.000Z",
   "sourceContext": {
     "originUrl": "https://professional.sunstargum.com/en-en/news-events/plaque-removal-lets-talk-oral-health.html",
-    "originPage": "article page with related content section",
-    "blockPosition": "bottom"
+    "originPage": "article page with table of contents",
+    "blockPosition": "sidebar"
   },
   "visualCharacteristics": {
-    "colorScheme": "teal",
+    "colorScheme": "light",
     "density": "compact",
-    "purpose": "article-links",
-    "imagePattern": "thumbnail"
+    "purpose": "article-toc",
+    "imagePattern": "noimg"
   },
   "contentPattern": {
-    "structure": "image + title + link",
+    "structure": "heading list with anchor links",
     "buttonCount": 0,
-    "imageCount": 3
+    "imageCount": 0
   },
   "reuseGuidance": {
     "suitableFor": [
-      "related articles sections",
-      "recommended content grids",
-      "article navigation",
-      "content discovery sections"
+      "long-form articles",
+      "documentation pages",
+      "tutorial content",
+      "any page with multiple h2 sections"
     ],
     "notSuitableFor": [
-      "detailed article listings with dates/authors",
-      "full blog archive pages",
-      "single-column article lists"
+      "short articles without sections",
+      "pages without clear heading structure"
     ]
   },
   "usage": {

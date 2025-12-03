@@ -57,7 +57,9 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Inter, sans-serif;
   line-height: 32px;
 }
 
@@ -84,6 +86,26 @@ p {
   font-size: 16px;
   line-height: 26px;
   color: var(--text-color);
+}
+
+/* Image optimization to prevent layout shift */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent layout shift from lazy-loaded images */
+main img[loading="lazy"] {
+  min-height: 200px;
+}
+
+/* Card images have fixed aspect ratio to prevent CLS */
+.cards img,
+.cards-article img,
+.cards-article-related img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 /* Remove spacing between breadcrumb and content */
